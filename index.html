@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Plus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>2048 Plus</h1>
+        <div id="score-display">得分: <span id="score">0</span></div>
+        <div id="timer">游戏时间: 0分 0秒</div>
+        <div id="board" class="board"></div>
+        <button id="restart">重新开始</button>
+        <div id="controls">
+            <button id="change-operator">更改运算符</button>
+            <span id="operator-display">当前运算符: 加法</span>
+            <span id="multiplication-count">剩余乘法次数: 3</span>
+            <button id="dark-mode-toggle">切换深色模式</button>
+        </div>
+    </div>
+    <div id="gameover-modal" class="modal">
+        <div class="modal-content">
+            <img src="gameover.png" alt="Game Over" class="gameover-image">
+            <h2>游戏结束</h2>
+            <p>您的得分是: <span id="final-score"></span></p>
+            <button id="restart">点击刷新按钮来重新开始</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
